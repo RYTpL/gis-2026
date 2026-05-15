@@ -8,7 +8,7 @@
 .DS_Store
 Thumbs.db
 
-# Node / Vite в корне (если вдруг)
+geoserver_data/
 node_modules/
 dist/
 .vite/
@@ -17,18 +17,6 @@ pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Docker / Postgres / GeoServer
 
-# Все контейнерные данные, которые не должны храниться в гите.
-# ВАЖНО: init-db и geoserver_data тебе как раз нужны в PR, поэтому их не игнорируем.
-# Если ты хранишь volume'ы/бэкапы отдельно — добавь их здесь.
 
-# Логи в geoserver_data (если не хочешь коммитить)
-geoserver_data/logs/
-geoserver_data/tmp/
-geoserver_data/geowebcache/
 
-# Бэкапы БД, если вдруг делаешь dump'ы рядом
-*.sql~
-*.dump
-*.backup
