@@ -1,4 +1,4 @@
-# Общий мусор
+
 *.log
 *.tmp
 *.bak
@@ -9,6 +9,8 @@
 Thumbs.db
 
 geoserver_data/
+.geoserver_data/
+
 node_modules/
 dist/
 .vite/
