@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^8.0.10"
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "ol": "^10.9.0"
   }
 }

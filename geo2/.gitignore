@@ -1,24 +1,33 @@
 
-*.log
-*.tmp
-*.bak
-*.swp
-*.swo
-*~
-.DS_Store
-Thumbs.db
-
-geoserver_data/
-.geoserver_data/
 
 node_modules/
 dist/
 .vite/
+
+
+
+*.log
 npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 
 
+.idea/
+.vscode/
 
+
+
+Thumbs.db
+Desktop.ini
+
+
+
+__pycache__/
+*.pyc
+
+
+
+.metadata/
+
+
+
+.env
