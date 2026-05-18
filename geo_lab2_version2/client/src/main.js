@@ -12,21 +12,6 @@ import ImageWMS from 'ol/source/ImageWMS';
 
 import { fromLonLat } from 'ol/proj';
 
-const map = new Map({
-  target: 'map',
-
-  layers: [
-    new TileLayer({
-      source: new OSM()
-    })
-  ],
-
-  view: new View({
-    center: fromLonLat([49.2191, 53.5979]),
-    zoom: 17
-  })
-});
-
 const buildingsLayer = new ImageLayer({
   source: new ImageWMS({
     url: 'http://localhost:8080/geoserver/gis/wms',
@@ -66,6 +51,21 @@ const poiLayer = new ImageLayer({
   })
 });
 
-map.addLayer(buildingsLayer);
-map.addLayer(roadsLayer);
-map.addLayer(poiLayer);
+const map = new Map({
+  target: 'map',
+
+  layers: [
+    new TileLayer({
+      source: new OSM()
+    }),
+
+    buildingsLayer,
+    roadsLayer,
+    poiLayer
+  ],
+
+  view: new View({
+    center: fromLonLat([49.2191, 53.5979]),
+    zoom: 17
+  })
+});
